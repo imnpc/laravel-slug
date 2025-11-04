@@ -23,7 +23,7 @@ Slug 整合了百度翻译与有道翻译,你可以选择使用其中一个平�
 使用 Composer 安装:
 
 ```bash
-composer require jourdon/slug
+composer require imnpc/slug
 ```
 导出配置文件
 ```bash
