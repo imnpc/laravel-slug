@@ -3,6 +3,7 @@
 namespace Jourdon\Slug;
 
 use GuzzleHttp\Client;
+use Illuminate\Support\Str;
 use Overtrue\Pinyin\Pinyin;
 
 class SlugTranslate
@@ -33,7 +34,7 @@ class SlugTranslate
         if (!$response) {
             return $this->pinyin($text);
         }
-        return str_slug($response);
+        return Str::slug($response);
     }
 
     private function isEnglish($text)
@@ -96,6 +97,6 @@ class SlugTranslate
 
     private function pinyin($text)
     {
-        return str_slug(app(Pinyin::class)->permalink($text));
+        return Str::slug(app(Pinyin::class)->permalink($text));
     }
 }
