@@ -1,5 +1,5 @@
 {
-    "name": "jourdon/laravel-slug",
+    "name": "imnpc/laravel-slug",
     "description": "laravel - translate Chinese to en for slug with baidu、youdao or pinyin",
     "keywords": [
         "laravel-slug",
@@ -9,9 +9,8 @@
         "laravel"
     ],
     "require": {
-
-        "overtrue/pinyin": "^3.0",
-        "guzzlehttp/guzzle": "~6.3"
+        "overtrue/pinyin": "^6.0",
+        "guzzlehttp/guzzle": "^7.0"
     },
     "license": "MIT",
     "authors": [
